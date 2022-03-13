@@ -1,0 +1,105 @@
+@import "https://unpkg.com/open-props";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--gray-9);
+}
+
+h1 {
+  font-size: var(--font-size-7);
+}
+h2 {
+  font-size: var(--font-size-6);
+}
+h3 {
+  font-size: var(--font-size-5);
+}
+h4 {
+  font-size: var(--font-size-4);
+}
+h5 {
+  font-size: var(--font-size-3);
+}
+h6 {
+  font-size: var(--font-size-2);
+}
+
+p {
+  font-size: var(--font-size-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-9);
+}
+
+.container {
+  max-width: 1024px;
+  padding: var(--size-3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  padding: var(--size-2);
+  background: var(--gray-9);
+  border: 2px solid var(--gray-9);
+  color: var(--gray-0);
+  border-radius: var(--radius-2);
+  font-weight: var(--font-weight-6);
+}
+
+.btn:hover {
+  background: var(--gray-0);
+  color: var(--gray-9);
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: var(--size-3);
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: var(--gray-6);
+  font-weight: var(--font-weight-6);
+}
+
+nav li a:hover {
+  color: var(--gray-9);
+}
+
+.logo {
+  font-family: "Bespoke Stencil", sans-serif;
+  font-weight: var(--font-weight-6);
+  font-size: var(--font-size-4);
+}
+
+/* Hero */
+
+.name {
+  text-decoration: underline;
+  text-decoration-color: var(--blue-2);
+  text-decoration-thickness: var(--size-2);
+}
+
+.hero h1 {
+  margin-bottom: var(--size-3);
+}
