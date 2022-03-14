@@ -3,12 +3,16 @@ title: Home
 layout: base.njk
 ---
 
-<div class="container">
-  <div class="hero">
-    <h1>
-      Hello I'm <span class="name">Mihir</span> <br />
-      I write about my adventures in front-end development
-    </h1>
-    <a href="/" class="btn">Recent Posts</a>
+<section class="hero">
+  <h1>
+    Hello I'm <span class="name">Mihir</span> <br />
+    I write about my adventures in front-end development
+  </h1>
+  <a href="/" class="btn">Recent Posts</a>
+</section>
+<section class="featured">
+  <div role="list" class="article">
+    {%- for post in collections.featured | reverse -%} {% include
+    'postsnippet.njk' %} {%- endfor -%}
   </div>
-</div>
+</section>

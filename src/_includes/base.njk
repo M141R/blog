@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
     <link
-      href="https://api.fontshare.com/css?f[]=bespoke-stencil@500&display=swap"
+      href="https://api.fontshare.com/css?f[]=bespoke-stencil@700&display=swap"
       rel="stylesheet"
     />
     <title>{{ title }}</title>
   </head>
   <body>
-    {% include 'navbar.njk' %}
-    {{ content | safe }}
+    <main class="container">
+      {% include 'navbar.njk' %}
+      {{ content | safe }}
+    </main>
   </body>
 </html>

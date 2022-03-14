@@ -39,6 +39,14 @@ a {
   color: var(--gray-9);
 }
 
+img {
+  width: 100%;
+}
+
+section {
+  margin-bottom: var(--size-9);
+}
+
 .container {
   max-width: 1024px;
   padding: var(--size-3);
@@ -47,12 +55,12 @@ a {
 }
 
 .btn {
-  padding: var(--size-2);
   background: var(--gray-9);
   border: 2px solid var(--gray-9);
   color: var(--gray-0);
   border-radius: var(--radius-2);
   font-weight: var(--font-weight-6);
+  padding: var(--size-2);
 }
 
 .btn:hover {
@@ -88,8 +96,8 @@ nav li a:hover {
 
 .logo {
   font-family: "Bespoke Stencil", sans-serif;
-  font-weight: var(--font-weight-6);
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-5);
+  color: var(--gray-9);
 }
 
 /* Hero */
@@ -100,6 +108,56 @@ nav li a:hover {
   text-decoration-thickness: var(--size-2);
 }
 
+.hero {
+  margin: var(--size-9) 0;
+}
+
 .hero h1 {
   margin-bottom: var(--size-3);
+}
+
+/* Snippet */
+
+.article {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--size-3);
+}
+
+article:first-child {
+  grid-column: span 2;
+}
+
+.snippet {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+
+article:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+article:first-child .image {
+  grid-column: span 2;
+}
+
+.snippet .btn {
+  max-width: max-content;
+}
+
+.snippet img {
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+article:first-child .info {
+  gap: var(--size-3);
 }
