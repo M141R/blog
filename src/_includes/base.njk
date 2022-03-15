@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
     <link
-      href="https://api.fontshare.com/css?f[]=bespoke-stencil@700&display=swap"
+      href="https://api.fontshare.com/css?f[]=bespoke-stencil@700&f[]=tanker@400&display=swap"
       rel="stylesheet"
     />
     <title>{{ title }}</title>
@@ -15,6 +15,7 @@
     <main class="container">
       {% include 'navbar.njk' %}
       {{ content | safe }}
+      {% include 'footer.njk' %}
     </main>
   </body>
 </html>

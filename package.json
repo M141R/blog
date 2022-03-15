@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Mihir-27/blog#readme",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "luxon": "^2.3.1",
     "open-props": "^1.3.9"
   }
 }

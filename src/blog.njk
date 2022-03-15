@@ -1,0 +1,12 @@
+---
+title: Blog
+layout: base.njk
+---
+
+<section class="blog">
+  <h1>Recent Articles</h1>
+  <div class="cards">
+    {%- for post in collections.post | reverse -%} {% include 'postlist.njk' %}
+    {%- endfor -%}
+  </div>
+</section>

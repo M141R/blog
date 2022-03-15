@@ -1,4 +1,5 @@
 @import "https://unpkg.com/open-props";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500&display=swap");
 
 * {
   padding: 0;
@@ -7,44 +8,70 @@
 }
 
 body {
-  font-family: var(--font-sans);
-  color: var(--gray-9);
+  font-family: "Poppins", var(--font-sans);
+  color: var(--gray-7);
 }
 
 h1 {
   font-size: var(--font-size-7);
+  color: var(--gray-9);
+  font-family: "Tanker", sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
 }
 h2 {
   font-size: var(--font-size-6);
+  color: var(--gray-9);
+  font-family: "Tanker", sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
 }
 h3 {
   font-size: var(--font-size-5);
+  color: var(--gray-9);
+  font-family: "Tanker", sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
 }
 h4 {
   font-size: var(--font-size-4);
+  color: var(--gray-9);
+  font-family: "Tanker", sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
 }
 h5 {
   font-size: var(--font-size-3);
+  color: var(--gray-9);
+  font-family: "Tanker", sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
 }
 h6 {
   font-size: var(--font-size-2);
+  color: var(--gray-9);
+  font-family: "Tanker", sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
 }
 
 p {
-  font-size: var(--font-size-1);
+  font-size: var(--font-size-2);
 }
 
 a {
   text-decoration: none;
-  color: var(--gray-9);
+  color: var(--blue-5);
+}
+
+b {
+  font-family: "Tanker", sans-serif;
+  letter-spacing: var(--font-letterspacing-2);
 }
 
 img {
   width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  aspect-ratio: var(--ratio-golden);
 }
 
 section {
-  margin-bottom: var(--size-9);
+  padding: var(--size-8) 0;
 }
 
 .container {
@@ -61,6 +88,7 @@ section {
   border-radius: var(--radius-2);
   font-weight: var(--font-weight-6);
   padding: var(--size-2);
+  max-width: max-content;
 }
 
 .btn:hover {
@@ -103,17 +131,12 @@ nav li a:hover {
 /* Hero */
 
 .name {
-  text-decoration: underline;
-  text-decoration-color: var(--blue-2);
-  text-decoration-thickness: var(--size-2);
-}
-
-.hero {
-  margin: var(--size-9) 0;
+  box-shadow: inset 0 -20px 0 0 var(--blue-2);
 }
 
 .hero h1 {
   margin-bottom: var(--size-3);
+  letter-spacing: var(--font-letterspacing-1);
 }
 
 /* Snippet */
@@ -144,14 +167,6 @@ article:first-child .image {
   grid-column: span 2;
 }
 
-.snippet .btn {
-  max-width: max-content;
-}
-
-.snippet img {
-  object-fit: cover;
-}
-
 .info {
   display: flex;
   flex-direction: column;
@@ -160,4 +175,61 @@ article:first-child .image {
 
 article:first-child .info {
   gap: var(--size-3);
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--gray-3);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+  padding-top: var(--size-3);
+}
+
+.footer-section li {
+  list-style: none;
+  margin-bottom: var(--size-1);
+}
+
+.footer-section li a {
+  color: var(--gray-6);
+  font-weight: var(--font-weight-6);
+}
+
+.footer-section li a:hover {
+  color: var(--gray-9);
+}
+
+/* Postlist */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--size-3);
+}
+
+/* Post */
+
+.post img {
+  margin: var(--size-6) auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.post p {
+  line-height: var(--font-lineheight-3);
+  margin: var(--size-3) 0;
+}
+
+.meta {
+  margin-bottom: var(--size-3);
+}
+
+.meta p {
+  margin: 0;
 }
