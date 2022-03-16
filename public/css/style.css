@@ -1,4 +1,5 @@
 @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500&display=swap");
 
 * {
@@ -7,44 +8,61 @@
   box-sizing: border-box;
 }
 
+:root {
+  --clr1: var(--gray-7);
+  --clr2: var(--gray-9);
+  --clr3: var(--gray-0);
+  --clr4: var(--blue-2);
+  --clr5: var(--blue-5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr1: var(--gray-3);
+    --clr2: var(--gray-0);
+    --clr3: var(--gray-9);
+    --clr4: var(--blue-5);
+  }
+}
+
 body {
   font-family: "Poppins", var(--font-sans);
-  color: var(--gray-7);
+  color: var(--clr1);
 }
 
 h1 {
   font-size: var(--font-size-7);
-  color: var(--gray-9);
+  color: var(--clr2);
   font-family: "Tanker", sans-serif;
   letter-spacing: var(--font-letterspacing-2);
 }
 h2 {
   font-size: var(--font-size-6);
-  color: var(--gray-9);
+  color: var(--clr2);
   font-family: "Tanker", sans-serif;
   letter-spacing: var(--font-letterspacing-2);
 }
 h3 {
   font-size: var(--font-size-5);
-  color: var(--gray-9);
+  color: var(--clr2);
   font-family: "Tanker", sans-serif;
   letter-spacing: var(--font-letterspacing-2);
 }
 h4 {
   font-size: var(--font-size-4);
-  color: var(--gray-9);
+  color: var(--clr2);
   font-family: "Tanker", sans-serif;
   letter-spacing: var(--font-letterspacing-2);
 }
 h5 {
   font-size: var(--font-size-3);
-  color: var(--gray-9);
+  color: var(--clr2);
   font-family: "Tanker", sans-serif;
   letter-spacing: var(--font-letterspacing-2);
 }
 h6 {
   font-size: var(--font-size-2);
-  color: var(--gray-9);
+  color: var(--clr2);
   font-family: "Tanker", sans-serif;
   letter-spacing: var(--font-letterspacing-2);
 }
@@ -55,7 +73,11 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--blue-5);
+  color: var(--clr5);
+}
+
+a:visited {
+  color: var(--clr5);
 }
 
 b {
@@ -75,16 +97,28 @@ section {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1920px;
   padding: var(--size-3);
   margin-left: auto;
   margin-right: auto;
 }
 
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
 .btn {
-  background: var(--gray-9);
-  border: 2px solid var(--gray-9);
-  color: var(--gray-0);
+  background: var(--clr2);
+  border: 2px solid var(--clr2);
+  color: var(--clr3);
   border-radius: var(--radius-2);
   font-weight: var(--font-weight-6);
   padding: var(--size-2);
@@ -92,8 +126,17 @@ section {
 }
 
 .btn:hover {
-  background: var(--gray-0);
-  color: var(--gray-9);
+  background: var(--clr3);
+  color: var(--clr2);
+}
+
+.btn:visited {
+  color: var(--clr3);
+}
+
+.btn:visited:hover {
+  background: var(--clr3);
+  color: var(--clr2);
 }
 
 /* Navbar */
@@ -119,24 +162,37 @@ nav li a {
 }
 
 nav li a:hover {
-  color: var(--gray-9);
+  color: var(--clr2);
+}
+
+nav li a:visited {
+  color: var(--gray-6);
+}
+
+nav li a:visited:hover {
+  color: var(--clr2);
 }
 
 .logo {
   font-family: "Bespoke Stencil", sans-serif;
   font-size: var(--font-size-5);
-  color: var(--gray-9);
+  color: var(--clr2);
+}
+
+.logo:visited {
+  color: var(--clr2);
 }
 
 /* Hero */
 
 .name {
-  box-shadow: inset 0 -20px 0 0 var(--blue-2);
+  box-shadow: inset 0 -20px 0 0 var(--clr4);
 }
 
 .hero h1 {
   margin-bottom: var(--size-3);
   letter-spacing: var(--font-letterspacing-1);
+  max-inline-size: none;
 }
 
 /* Snippet */
@@ -167,6 +223,12 @@ article:first-child .image {
   grid-column: span 2;
 }
 
+@media (max-width: 425px) {
+  article:first-child {
+    grid-template-columns: 1fr;
+  }
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -174,7 +236,7 @@ article:first-child .image {
 }
 
 article:first-child .info {
-  gap: var(--size-3);
+  gap: var(--size-fluid-1);
 }
 
 /* Footer */
@@ -203,7 +265,7 @@ footer {
 }
 
 .footer-section li a:hover {
-  color: var(--gray-9);
+  color: var(--clr2);
 }
 
 /* Postlist */
@@ -215,6 +277,11 @@ footer {
 }
 
 /* Post */
+
+.post {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 .post img {
   margin: var(--size-6) auto;
