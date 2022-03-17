@@ -9,7 +9,7 @@
 }
 
 :root {
-  --clr1: var(--gray-7);
+  --clr1: var(--gray-8);
   --clr2: var(--gray-9);
   --clr3: var(--gray-0);
   --clr4: var(--blue-2);
@@ -147,7 +147,7 @@ header {
   width: 100%;
 }
 
-nav {
+nav ul {
   display: flex;
   gap: var(--size-3);
 }
@@ -157,7 +157,7 @@ nav li {
 }
 
 nav li a {
-  color: var(--gray-6);
+  color: var(--gray-7);
   font-weight: var(--font-weight-6);
 }
 
@@ -166,7 +166,7 @@ nav li a:hover {
 }
 
 nav li a:visited {
-  color: var(--gray-6);
+  color: var(--gray-7);
 }
 
 nav li a:visited:hover {
