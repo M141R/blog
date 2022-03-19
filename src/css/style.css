@@ -14,6 +14,7 @@
   --clr3: var(--gray-0);
   --clr4: var(--blue-2);
   --clr5: var(--blue-5);
+  --clr6: var(--gray-7);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@
     --clr2: var(--gray-0);
     --clr3: var(--gray-9);
     --clr4: var(--blue-5);
+    --clr6: var(--gray-4);
   }
 }
 
@@ -156,7 +158,7 @@ nav li {
 }
 
 nav li a {
-  color: var(--gray-7);
+  color: var(--clr6);
   font-weight: var(--font-weight-6);
 }
 
@@ -165,7 +167,7 @@ nav li a:hover {
 }
 
 nav li a:visited {
-  color: var(--gray-7);
+  color: var(--clr6);
 }
 
 nav li a:visited:hover {
@@ -259,7 +261,7 @@ footer {
 }
 
 .footer-section li a {
-  color: var(--gray-6);
+  color: var(--clr6);
   font-weight: var(--font-weight-6);
 }
 
