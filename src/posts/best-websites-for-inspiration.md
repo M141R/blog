@@ -3,7 +3,7 @@ title: Best Websites for inspiration
 description: Hello everyone, I found some great websites to find inspiration for
   your next ui design
 date: 2022-03-18T17:45:06.576Z
-image: https://images.unsplash.com/photo-1576858978851-fadc54c3c0dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8
+image: /assets/desktop-3.webp
 tags:
   - post
   - featured
