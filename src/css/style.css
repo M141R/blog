@@ -230,6 +230,13 @@ article:first-child .image {
   }
 }
 
+@media (max-width: 425px) {
+  .article {
+    grid-template-columns: 1fr;
+    gap: var(--size-4);
+  }
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -275,6 +282,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--size-3);
+}
+
+@media (max-width: 425px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: var(--size-4);
+  }
 }
 
 /* Post */
