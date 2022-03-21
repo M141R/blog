@@ -7,7 +7,7 @@ image: /assets/desktop-3.webp
 tags:
   - post
   - featured
-  - best
+  - resources
 ---
 
 Hello everyone,
