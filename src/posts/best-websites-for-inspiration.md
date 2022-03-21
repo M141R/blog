@@ -7,8 +7,8 @@ image: /assets/desktop-3.webp
 tags:
   - post
   - featured
+  - best
 ---
-
 
 Hello everyone,
 I found some great websites to find inspiration for your next ui design

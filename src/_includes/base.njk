@@ -26,10 +26,10 @@
     <title>{{ title }}</title>
   </head>
   <body>
+    {% include 'navbar.njk' %}
     <main class="container">
-      {% include 'navbar.njk' %}
       {{ content | safe }}
-      {% include 'footer.njk' %}
     </main>
+    {% include 'footer.njk' %}
   </body>
 </html>

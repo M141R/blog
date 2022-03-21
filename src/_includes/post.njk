@@ -5,6 +5,14 @@ layout: base.njk
 <section class="post">
   <div class="meta">
     <p>{{ date | postDate }}</p>
+    <p>Tags:</p>
+    <span class="tag-list">
+      {%- for tag in tags | filterTagList -%} {%- set tagUrl %}/tags/{{
+        tag | slug
+      }}/{% endset -%}
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+      {%- endfor %}
+    </span>
     <h1>{{ title }}</h1>
     <img src="{{ image }}" alt="" width="1920" height="1080" />
   </div>
