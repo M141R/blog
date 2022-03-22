@@ -2,7 +2,7 @@
 title: Best websites for illustration
 description: Some Great Websites where to can find illustrations for free!!!
 date: 2022-03-18T14:41:53.706Z
-image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9xo2psre0vpii8suzq9r.png
+image: /assets/1.webp
 tags:
   - post
   - featured
