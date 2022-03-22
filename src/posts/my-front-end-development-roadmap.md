@@ -2,7 +2,7 @@
 title: My Front-End Development Roadmap
 description: I am sharing the Roadmap which I follow
 date: 2022-03-22T05:00:12.393Z
-image: https://images.unsplash.com/photo-1578735546632-9ff1f1e7518e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8
+image: /assets/3.webp
 tags:
   - post
   - featured
