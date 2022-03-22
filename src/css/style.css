@@ -275,10 +275,13 @@ footer .container {
   padding-top: var(--size-3);
 }
 
+.footer-section ul {
+  padding-left: 0;
+}
+
 .footer-section li {
   list-style: none;
   margin-bottom: var(--size-1);
-  padding-left: 0;
 }
 
 .footer-section li a {
