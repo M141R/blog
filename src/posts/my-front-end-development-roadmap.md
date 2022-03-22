@@ -6,7 +6,7 @@ image: /assets/3.webp
 tags:
   - post
   - featured
-  - ""
+  - webdev
 ---
 ## Learn
 
