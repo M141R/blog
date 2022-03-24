@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Mihir-27/blog#readme",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "eleventy-plugin-time-to-read": "^1.2.0",
     "luxon": "^2.3.1"
   },
   "devDependencies": {

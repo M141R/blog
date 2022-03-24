@@ -6,6 +6,7 @@
     <h2>{{ post.data.title }}</h2>
     <date>{{ post.data.date | postDate }}</date>
     <p>{{ post.data.description }}</p>
+    <p>About {{ "text" | timeToRead }} reading time</p>
     <a href="{{ post.url }}" class="btn">Read More</a>
   </div>
 </article>
