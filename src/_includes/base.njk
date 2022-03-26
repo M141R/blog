@@ -29,7 +29,10 @@
     <meta name="description" content="{{ description }}" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mihirkblog.netlify.app/" />
+    <meta
+      property="og:url"
+      content="https://mihirkblog.netlify.app{{ page.url }}"
+    />
     <meta
       property="og:title"
       content="Hello I'm Mihir I write about my adventures in front-end development"
@@ -47,7 +50,10 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://mihirkblog.netlify.app/" />
+    <meta
+      property="twitter:url"
+      content="https://mihirkblog.netlify.app{{ page.url }}"
+    />
     <meta
       property="twitter:title"
       content="Hello I'm Mihir I write about my adventures in front-end development"
