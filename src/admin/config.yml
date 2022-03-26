@@ -25,7 +25,12 @@ collections:
 
       - { label: "Date", name: "date", widget: "datetime" }
 
-      - { label: "Featured Image", name: "image", widget: "image" }
+      - {
+          label: "Featured Image",
+          name: "image",
+          widget: "image",
+          required: false,
+        }
 
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
 
