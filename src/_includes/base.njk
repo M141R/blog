@@ -41,12 +41,7 @@
       property="og:description"
       content="Hello, I am Mihir a 16yrs old front-end developer. I am embarking on this new journey trying to discover new aspects of this arena. Hope that you join me and together we discover new horizons."
     />
-    <meta
-      property="og:image"
-      content="{{
-        'https://mihirkblog.netlify.app/assets/meta-image.png' | url
-      }}"
-    />
+    <meta property="og:image" content="{{ site.url + image }}" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -62,13 +57,9 @@
       property="twitter:description"
       content="Hello, I am Mihir a 16yrs old front-end developer. I am embarking on this new journey trying to discover new aspects of this arena. Hope that you join me and together we discover new horizons."
     />
-    <meta
-      property="twitter:image"
-      content="{{
-        'https://mihirkblog.netlify.app/assets/meta-image.png' | url
-      }}"
-    />
-    <link rel="canonical" href="https://mihirkblog.netlify.app{{ page.url }}" />
+    <meta property="twitter:image" content="{{ site.url + image }}" />
+
+    <link rel="canonical" href="{{ site.url + page.url }}" />
     <link
       href="https://api.fontshare.com/css?f[]=bespoke-stencil@700&f[]=tanker@400&display=swap"
       rel="stylesheet"
