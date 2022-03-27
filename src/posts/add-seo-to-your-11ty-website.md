@@ -6,6 +6,7 @@ image: /assets/4.webp
 tags:
   - post
   - featured
+  - webdev
 ---
 ## Add Front Matter in all pages
 
