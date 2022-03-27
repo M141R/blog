@@ -49,6 +49,8 @@ Add these in your `base.njk` or your main `njk` in which you have added `<head>`
 <meta property="og:image" content="{{ image }}">
 ```
 
+If you want to automatically generate open graph images you can read this [post ](https://bnijenhuis.nl/notes/2021-05-10-automatically-generate-open-graph-images-in-eleventy/).
+
 ## Twitter
 
 ```html
