@@ -350,3 +350,8 @@ footer .container {
   background: var(--clr2);
   color: var(--clr3);
 }
+
+:where(pre) {
+  max-width: 100%;
+  border-radius: 5px;
+}
