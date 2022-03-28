@@ -43,10 +43,10 @@ Add these in your `base.njk` or your main `njk` in which you have added `<head>`
 
 ```html
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url + image }}">
+<meta property="og:url" content="https://example.com{{page.url}}">
 <meta property="og:title" content="{{ metatitle }}">
 <meta property="og:description" content="{{ metadescription }}">
-<meta property="og:image" content="{{ image }}">
+<meta property="og:image" content="{{ site.url + image }}">
 ```
 
 If you want to automatically generate open graph images you can read this [post ](https://bnijenhuis.nl/notes/2021-05-10-automatically-generate-open-graph-images-in-eleventy/).
@@ -55,10 +55,10 @@ If you want to automatically generate open graph images you can read this [post 
 
 ```html
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="{{ site.url + image }}">
+<meta property="twitter:url" content="https://example.com{{page.url}}">
 <meta property="twitter:title" content="{{ metatitle }}">
 <meta property="twitter:description" content="{{ metadescription }}">
-<meta property="twitter:image" content="{{ image }}">
+<meta property="twitter:image" content="{{ site.url + image }}">
 ```
 
 ## SiteMap
@@ -85,7 +85,7 @@ eleventyExcludeFromCollections: true
 
 Make `robots.txt`
 
-```
+```txt
 Sitemap: https://www.yoursitename.com/sitemap.xml
 User-agent: *
 Disallow:
