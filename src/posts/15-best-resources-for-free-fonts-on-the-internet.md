@@ -5,7 +5,7 @@ description: Finding a good font to use for your project can be a real
   are pretty bad. If you have no idea where to start, I've done the hard work
   for you.
 date: 2022-04-02T08:03:12.096Z
-image: public/assets/5.webp
+image: /assets/5.webp
 tags:
   - post
   - resource
