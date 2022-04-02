@@ -8,6 +8,7 @@ date: 2022-04-02T08:03:12.096Z
 tags:
   - post
   - resource
+  - featured
 ---
 Finding a good font to use for your project can be a real challenge. There are literally thousands of them out there, and some of them are pretty bad. If you have no idea where to start, I've done the hard work for you.
 
