@@ -3,9 +3,9 @@ backend:
   branch: main
 publish_mode: editorial_workflow
 
-media_folder: "/assets"
+media_folder: "public/assets"
 
-public_folder: "public/assets"
+public_folder: "/assets"
 
 collections:
   - name: "blog"
