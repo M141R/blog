@@ -8,14 +8,14 @@ date: 2022-04-02T08:03:12.096Z
 image: /assets/5.webp
 tags:
   - post
-  - resource
+  - resources
   - featured
 ---
 Finding a good font to use for your project can be a real challenge. There are literally thousands of them out there, and some of them are pretty bad. If you have no idea where to start, I've done the hard work for you.
 
 1. [Google Font](https://fonts.google.com)
 
-   Google Fonts is a library of 1,394 open source font families and APIs for convenient use via CSS and Android. You'll find both serif and sans-serif fonts, but they're not limited to just those two types. You'll find fonts inspired by the classics, fonts with retro flair, and everything in between."
+   Google Fonts is a library of 1,394 open source font families and APIs for convenient use via CSS and Android. You'll find both serif and sans-serif fonts, but they're not limited to just those two types. You'll find fonts inspired by the classics, fonts with retro flair, and everything in between.
 2. [Fonts Squirrel](https://www.fontsquirrel.com/)
 
    FontSquirrel lets you search for fonts by keyword, so if you're looking for a good font for a logo, or for a specific project, you can simply type in the keywords and get results. You can also use the filters to show only decorative, sans serif, or script fonts. You can also search by designer and find out what other fonts they've created.
@@ -60,10 +60,10 @@ Finding a good font to use for your project can be a real challenge. There are l
     Lost Type is the very first “Pay-What-You-Want” type foundry founded back in 2011. Whatever funds are collected go directly to the font’s respective designers.
 16. [Awwwards](https://www.awwwards.com/awwwards/collections/free-fonts/)
 
-    Awwwards generously put together a collection of free fonts from designers all around the web. Although not all are free for commercial use
+    Awwwards generously put together a collection of free fonts from designers all around the web. Although not all are free for commercial use.
 17. [FreeDesignResources](https://freedesignresources.net/category/free-fonts/)
 
-    FreeDesignResources is a website where you can get anything you want for design for free
+    FreeDesignResources is a website where you can get anything you want for design for free.
 18. [Pixel Surplus](https://pixelsurplus.com/collections/free-fonts)
 
-    Pixel Surplus is a resource website for creators where you can get resources for design for free and you can buy premium resources also
+    Pixel Surplus is a resource website for creators where you can get resources for design for free and you can buy premium resources also.
