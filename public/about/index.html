@@ -10,21 +10,24 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
+      href="/assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
+      href="/assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
+      href="/assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="manifest"
+      href="/assets/favicon/site.webmanifest"
+    />
     <!-- Primary Meta Tags -->
     <title>About | MihirK</title>
     <meta name="description" content="Learn more About me" />
@@ -80,9 +83,20 @@
   <body>
     <header>
   <div class="container">
-    <a class="logo" href="/">MK</a>
     <nav>
-      <ul>
+      <a class="logo" href="/">MK</a>
+      <button class="hamburger" id="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+        </svg>
+      </button>
+      <ul class="nav-menu">
         <li><a href="/">Home</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/about">About</a></li>
@@ -129,5 +143,6 @@
   </div>
 </footer>
 
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

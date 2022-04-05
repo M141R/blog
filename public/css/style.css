@@ -74,6 +74,30 @@ h6 {
   letter-spacing: var(--font-letterspacing-2);
 }
 
+@media (max-width: 425px) {
+  h1 {
+    font-size: var(--font-size-6);
+  }
+  h2 {
+    font-size: var(--font-size-5);
+  }
+  h3 {
+    font-size: var(--font-size-4);
+  }
+  h4 {
+    font-size: var(--font-size-3);
+  }
+  h5 {
+    font-size: var(--font-size-2);
+  }
+  h6 {
+    font-size: var(--font-size-1);
+  }
+  p {
+    font-size: var(--font-size-1);
+  }
+}
+
 p {
   font-size: var(--font-size-2);
 }
@@ -121,6 +145,36 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 .btn {
   background: var(--clr2);
   border: 2px solid var(--clr2);
@@ -150,16 +204,17 @@ header {
   border-bottom: 1px solid var(--clr7);
 }
 
-header .container {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 nav ul {
   display: flex;
-  gap: var(--size-3);
+  justify-content: space-between;
 }
 
 nav li {
@@ -181,6 +236,33 @@ nav li a:visited {
 
 nav li a:visited:hover {
   color: var(--clr2);
+}
+
+.hamburger {
+  background: transparent;
+  fill: var(--clr2);
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    width: 100%;
+    padding-left: 0;
+  }
+  .hamburger {
+    margin-left: auto;
+    display: block;
+  }
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-menu li {
+    max-inline-size: 100%;
+    text-align: center;
+  }
 }
 
 .logo {
@@ -239,9 +321,10 @@ article:first-child .image {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .article {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: var(--size-4);
   }
 }
@@ -261,6 +344,12 @@ article:first-child .info {
 footer {
   margin-top: auto;
   background: var(--clr8);
+}
+
+@media (max-width: 320px) {
+  footer {
+    width: 320px;
+  }
 }
 
 footer .container {
@@ -301,7 +390,7 @@ footer .container {
   gap: var(--size-3);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .cards {
     grid-template-columns: 1fr;
     gap: var(--size-4);
